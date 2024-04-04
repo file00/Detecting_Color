@@ -31,11 +31,12 @@ while True:
     bbox = mask_.getbbox()
     if bbox is not None:
         x1, y1, x2, y2 = bbox
-        frame = cv2.rectangle(frame,(x1,y1),(x2,y2),(0,255,255),2)
+        frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 255), 2)
+        cv2.putText(frame, 'Yellow',(x1+8,y1-15),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),2)
 
     print(bbox)
-
-    cv2.imshow('frame',frame)
+    cv2.imshow('Mask',mask)
+    cv2.imshow('Result',frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
