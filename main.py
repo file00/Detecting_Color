@@ -1,3 +1,6 @@
+# Detecting Color 
+# It doesn't matter at all if you choose the color you want to extract.
+
 import cv2
 from PIL import Image
 import numpy as np
@@ -43,3 +46,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
