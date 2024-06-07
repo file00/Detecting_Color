@@ -1,4 +1,4 @@
-# Detecting Color(Yellow) 
+# Detecting Color (Yellow) 
 
 Development period: 2024.04.04 and 04.05
 
